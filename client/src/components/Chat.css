@@ -1,0 +1,84 @@
+/* Reuse ContactUs.css styles */
+.perspective-1000 {
+    perspective: 1000px;
+  }
+  
+  .animate-3d-card {
+    animation: card3DAnimation 6s infinite ease-in-out;
+    transform-style: preserve-3d;
+  }
+  
+  @keyframes card3DAnimation {
+    0% {
+      transform: rotateX(0deg) rotateY(0deg) translateZ(0);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+      transform: rotateX(5deg) rotateY(5deg) translateZ(15px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+      transform: rotateX(0deg) rotateY(0deg) translateZ(0);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  .bg-gradient-to-br {
+    background: linear-gradient(45deg, #ccfbf1, #c7d2fe, #f9a8d4);
+    animation: gradientAnimation 15s ease infinite;
+    background-size: 200% 200%;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  input {
+    transition: all 0.3s ease;
+  }
+  
+  input:focus {
+    transform: scale(1.02);
+    box-shadow: 0 0 8px rgba(93, 215, 253, 0.5);
+  }
+  
+  .max-w-md {
+    max-width: 28rem;
+  }
+  
+  .rounded-2xl {
+    border-radius: 1.5rem;
+  }
+  
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+  
+  .text-red-500 {
+    color: #ef4444;
+  }
+  
+  /* WhatsApp-like chat styles */
+  .h-64 {
+    height: 16rem;
+  }
+  
+  .max-w-xs {
+    max-width: 75%;
+  }
+  
+  .bg-blue-100 {
+    background-color: #e7f0fa;
+  }
+  
+  .bg-gray-100 {
+    background-color: #f1f1f1;
+  }

@@ -1,0 +1,91 @@
+/* Ensure 3D perspective is applied */
+.perspective-1000 {
+    perspective: 1000px;
+  }
+  
+  /* 3D card animation */
+  .animate-3d-card {
+    animation: card3DAnimation 6s infinite ease-in-out;
+    transform-style: preserve-3d;
+  }
+  
+  /* Keyframes for 3D card animation */
+  @keyframes card3DAnimation {
+    0% {
+      transform: rotateX(0deg) rotateY(0deg) translateZ(0);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+      transform: rotateX(5deg) rotateY(5deg) translateZ(15px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+      transform: rotateX(0deg) rotateY(0deg) translateZ(0);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  /* Gradient background animation for the page */
+  .bg-gradient-to-br {
+    background: linear-gradient(45deg, #ccfbf1, #c7d2fe, #f9a8d4);
+    animation: gradientAnimation 15s ease infinite;
+    background-size: 200% 200%;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Ensure input fields and text are readable */
+  input, textarea {
+    transition: all 0.3s ease;
+  }
+  
+  input:focus, textarea:focus {
+    transform: scale(1.02);
+    box-shadow: 0 0 8px rgba(93, 215, 253, 0.5);
+  }
+  
+  /* Form container styling */
+  .max-w-md {
+    max-width: 28rem; /* Compact size */
+  }
+  
+  /* Smooth transitions for form elements */
+  .rounded-2xl {
+    border-radius: 1.5rem; /* Curved corners */
+  }
+  
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+  
+  /* Success message styling */
+  .bg-green-100 {
+    background-color: rgba(209, 250, 229, 1);
+  }
+  
+  .border-l-4 {
+    border-left-width: 4px;
+  }
+  
+  .border-green-500 {
+    border-color: #10b981;
+  }
+  
+  .text-green-700 {
+    color: #047857;
+  }
+  
+  /* Error message styling */
+  .text-red-500 {
+    color: #ef4444;
+  }

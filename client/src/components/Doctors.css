@@ -1,0 +1,45 @@
+/* Existing styles */
+.parallax-bg {
+    background: url('../assets/diabetes-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.3;
+    transform: translateZ(-1px) scale(1.1);
+    z-index: -1;
+  }
+  
+  .doctor-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .doctor-card:hover {
+    transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .min-h-screen {
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  
+  @media (max-width: 640px) {
+    .parallax-bg {
+      background-attachment: scroll;
+    }
+    .doctor-card:hover {
+      transform: translateY(-5px);
+    }
+  }
+  
+  /* Dialogue box styles */
+  .dialogue-box {
+    background-color: rgba(30, 58, 138, 0.95); /* Deep blue #1E3A8A with slight translucency */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Soft white border */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Softer, deeper shadow */
+    backdrop-filter: blur(5px); /* Glassmorphism effect */
+    transform: perspective(800px) rotateX(2deg) rotateY(2deg); /* Subtle 3D tilt */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .dialogue-box:hover {
+    transform: perspective(800px) rotateX(0deg) rotateY(0deg); /* Reset on hover */
+  }
